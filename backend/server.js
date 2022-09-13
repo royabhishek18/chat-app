@@ -19,6 +19,12 @@ app.get("/api/chats/:id", (req, res) => {
   res.send(singleChat);
 });
 
+// app.get("/api/chats/:id", (req, res) => {
+//   console.log(req.params.id);
+//   const singleChat = chats.find((c) => c._id === req.params.id);
+//   res.send(singleChat);
+// });
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`server started on port ${PORT}`));
